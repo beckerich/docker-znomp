@@ -1,0 +1,15 @@
+version: '3'
+services:
+  znomp:
+    tty: true
+    restart: always
+    image: hbeckeri/znomp:1.0.0
+    volumes:
+     - ./znomp/config.json:/z-nomp/config.json
+     - ./znomp/coins:/z-nomp/coins
+     - ./znomp/pool_configs:/z-nomp/pool_configs
+    ports:
+       - 7932:7932
+  redis:
+    image: redis:latest
+    restart: always
