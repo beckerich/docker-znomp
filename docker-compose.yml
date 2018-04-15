@@ -12,6 +12,7 @@ services:
      - ./znomp/pool_configs:/z-nomp/pool_configs
     ports:
        - 7932:7932
+       - 8080:8080
   redis:
     image: redis:latest
     restart: always

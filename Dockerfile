@@ -7,6 +7,8 @@ RUN git clone https://github.com/joshuayabut/node-open-mining-portal.git /z-nomp
 
 WORKDIR /z-nomp
 
+EXPOSE 7932 8080
+
 RUN npm update && npm install
 
 CMD npm start
