@@ -3,7 +3,7 @@ services:
   znomp:
     tty: true
     restart: always
-    image: hbeckeri/znomp:1.0.0
+    image: hbeckeri/znomp:1.0.5
     depends_on:
      - "redis" 
     volumes:
